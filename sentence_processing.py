@@ -19,7 +19,7 @@ def parts_of_speech_tag(nltk_tag):
 def get_lemma(sentence):
     # Find all parts of speech for each token
     tagged = nltk.pos_tag(nltk.word_tokenize(sentence))
-    word_net_tagged = map(lambda x: (x[0], posTag(x[1])), tagged)
+    word_net_tagged = map(lambda x: (x[0], parts_of_speech_tag(x[1])), tagged)
     lemmatized_sentence = []
     for word, tag in word_net_tagged:
         if word == 'ass':
