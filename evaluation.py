@@ -10,7 +10,7 @@ def max_seq_length(sequence):
 def recall_measure(y_true, y_pred):
     true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
     possible_positives = K.sum(K.round(K.clip(y_true, 0, 1)))
-    recall = true_positives / (possible_postives + K.epsilon())
+    recall = true_positives / (possible_positives + K.epsilon())
     return recall
 
 def precision_measure(y_true, y_pred):
@@ -32,14 +32,16 @@ def plot_history(history):
     plt.ylabel('Loss')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'])
+    plt.show()
 
     # Plot accuracy
     plt.title('Accuracy')
-    plt.plot(history.history['acc'], color = 'blue', label = 'train')
-    plt.plot(history.history['val_acc'], color = 'red', label = 'test')
+    plt.plot(history.history['accuracy'], color = 'blue', label = 'train')
+    plt.plot(history.history['val_accuracy'], color = 'red', label = 'test')
     plt.ylabel('Accuracy')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'])
+    plt.show()
 
     # Plot F1
     plt.title('F1-Score')
@@ -48,6 +50,7 @@ def plot_history(history):
     plt.ylabel('F1-Score')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'])
+    plt.show()
 
     # Plot precision
     plt.title('Precision')
@@ -56,6 +59,7 @@ def plot_history(history):
     plt.ylabel('Precision')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'])
+    plt.show()
 
     # Plot recall
     plt.title('Recall')
@@ -64,3 +68,4 @@ def plot_history(history):
     plt.ylabel('Recall')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'])
+    plt.show()
