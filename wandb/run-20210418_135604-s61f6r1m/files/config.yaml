@@ -1,0 +1,43 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.26
+    framework: keras
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.9.2
+    t:
+      1:
+      - 2
+      - 3
+      4: 3.9.2
+      5: 0.10.26
+      8:
+      - 1
+      - 5
+batch_size:
+  desc: null
+  value: 32
+embedding_dims:
+  desc: null
+  value: 10
+epochs:
+  desc: null
+  value: 10
+filters:
+  desc: null
+  value: 16
+hidden_dims:
+  desc: null
+  value: 250
+kernel_size:
+  desc: null
+  value: 3
+maxlen:
+  desc: null
+  value: 1000
+vocab_size:
+  desc: null
+  value: 1000

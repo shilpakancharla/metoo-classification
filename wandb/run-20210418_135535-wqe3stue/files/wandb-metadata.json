@@ -1,0 +1,24 @@
+{
+    "os": "macOS-11.0.1-x86_64-i386-64bit",
+    "python": "3.9.2",
+    "heartbeatAt": "2021-04-18T17:55:40.765388",
+    "startedAt": "2021-04-18T17:55:35.248931",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/shilpakancharla/Library/Jupyter/runtime/kernel-5c141ee2-d8fc-4a75-a1a4-33075e112e0c.json"
+    ],
+    "state": "running",
+    "program": "model_with_embedding.ipynb",
+    "root": "/Users/shilpakancharla/Documents/metoo-classification",
+    "git": {
+        "remote": "https://github.com/shilpakancharla/metoo-classification.git",
+        "commit": "c08822d120d3767bc480f0c93b1db1dcd447859e"
+    },
+    "email": "shilpakancharla18@gmail.com",
+    "host": "Shilpas-MBP.attlocal.net",
+    "username": "shilpakancharla",
+    "executable": "/usr/local/Cellar/jupyterlab/3.0.9/libexec/bin/python3"
+}
