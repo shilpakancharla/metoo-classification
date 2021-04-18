@@ -5,3 +5,4 @@
 /__pycache__
 .vs/
 /processed_data
+/wandb
